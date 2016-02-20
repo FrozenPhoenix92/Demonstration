@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{BB600AD9-CD70-41A1-9D51-B24F18A38146}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Demonstration</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Demonstration</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer: plast128@yandex.ru (9YV7BMR4G9)</CodesignKey>
+    <CodesignProvision>8f187773-a9a2-4b66-b9e1-39d02e53f2ad</CodesignProvision>
+    <CodesignEntitlements />
+    <CodesignResourceRules />
+    <CodesignExtraArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer: plast128@yandex.ru (9YV7BMR4G9)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>8f187773-a9a2-4b66-b9e1-39d02e53f2ad</CodesignProvision>
+    <CodesignResourceRules />
+    <CodesignExtraArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>8f187773-a9a2-4b66-b9e1-39d02e53f2ad</CodesignProvision>
+    <CodesignKey>iPhone Developer: plast128@yandex.ru (9YV7BMR4G9)</CodesignKey>
+    <CodesignResourceRules />
+    <CodesignExtraArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ScratchTicketView\ScratchTicketView.cs" />
+    <Compile Include="ScratchTicketView\ScratchTicketView.designer.cs" />
+    <Compile Include="ScratchTicketView\ScratchTicketViewController.cs" />
+    <Compile Include="ScratchTicketView\ScratchTicketViewController.designer.cs" />
+    <Compile Include="Signature\SignatureController.cs" />
+    <Compile Include="Signature\SignatureController.designer.cs" />
+    <Compile Include="Swipe\RandomView.cs" />
+    <Compile Include="Swipe\SwipeController.cs" />
+    <Compile Include="Swipe\SwipeController.designer.cs" />
+    <Compile Include="Tabs\TabController.cs" />
+    <Compile Include="Tabs\TabController.designer.cs" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="CollectionView\CircleLayout.cs" />
+    <Compile Include="CollectionView\CollectionViewController.cs" />
+    <Compile Include="CollectionView\CollectionViewController.designer.cs" />
+    <Compile Include="CollectionView\GridLayout.cs" />
+    <Compile Include="CollectionView\IAnimal.cs" />
+    <Compile Include="CollectionView\LineLayout.cs" />
+    <Compile Include="CollectionView\Monkey.cs" />
+    <Compile Include="Controls\ControlsViewController.cs" />
+    <Compile Include="Controls\ControlsViewController.designer.cs" />
+    <Compile Include="Controls\PickerModel.cs" />
+    <Compile Include="FayoutMenu\FayoutMenuController.cs" />
+    <Compile Include="FayoutMenu\FayoutMenuController.designer.cs" />
+    <Compile Include="ListDemonstration\ListCustomVegeCell.cs" />
+    <Compile Include="ListDemonstration\ListTableItem.cs" />
+    <Compile Include="ListDemonstration\ListTableItemGroup.cs" />
+    <Compile Include="ListDemonstration\ListTableSource.cs" />
+    <Compile Include="ListDemonstration\ListTableViewController.cs" />
+    <Compile Include="ListDemonstration\ListTableViewController.designer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="MainMenuController.cs" />
+    <Compile Include="MainMenuController.designer.cs" />
+    <Compile Include="MainMenuRow.cs" />
+    <Compile Include="MenuTableSource.cs" />
+    <Compile Include="MenuTableViewController.cs" />
+    <Compile Include="MenuTableViewController.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FlyoutNavigation">
+      <HintPath>..\Components\flyoutnavigation-1.5.1\lib\ios-unified\FlyoutNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="SignaturePad.iOS">
+      <HintPath>..\Components\signature-pad-1.3.8\lib\ios-unified\SignaturePad.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.XamarinIOS.Unified, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\Xamarin.iOS10\SQLite.Net.Platform.XamarinIOS.Unified.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="XCardView">
+      <HintPath>..\Components\XCardView-1.1\lib\ios-unified\XCardView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\FillTexture.png" />
+    <BundleResource Include="Resources\FillTexture2.png" />
+    <BundleResource Include="Resources\Monkey.png" />
+    <BundleResource Include="Images\CollectionView\monkey.png" />
+    <BundleResource Include="Images\CollectionView\placeholder.png" />
+    <BundleResource Include="Images\ListDemonstration\Bulbs.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Bulbs%402x.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Flower Buds.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Flower Buds%402x.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Fruits.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Fruits%402x.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Legumes.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Legumes%402x.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Tubers.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Tubers%402x.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Vegetables.jpg" />
+    <BundleResource Include="Images\ListDemonstration\Vegetables%402x.jpg" />
+    <BundleResource Include="Images\Swipe\rolls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MobileSamples\Samples.Shared\Samples.Shared.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>Samples.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <XamarinComponentReference Include="flyoutnavigation">
+      <Visible>False</Visible>
+      <Version>1.5.1</Version>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="signature-pad">
+      <Visible>False</Visible>
+      <Version>1.3.8</Version>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="XCardView">
+      <Visible>False</Visible>
+      <Version>1.1</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
